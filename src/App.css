@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 4rem 50px;
+  border-radius: 20px;
+  /* height: 100vh; */
+  background-color: #30444f;
+}
+.card >p{
+  font-size: 20px;
+  text-align: center;
+}
+.top-text{
+  display: flex;
+  justify-content: space-around;
+}
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+.card {
+  gap: 45px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  z-index: 3;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 400px;
+  height: 410px;
+  box-shadow: -8px 0 4px rgba(0, 0, 0, .2), 8px 0 4px rgba(0, 0, 0, .2);
+}
+.card.meduil{
+  z-index: 1;
+  filter: brightness(80%);
+  /* position: relative; */
+  margin-left: -60px;
+    margin-right: -60px;
+  transform: translate(0, 62px)scale(.7);
+}
+.meduim-card{
+  z-index: 2;
+  filter: brightness(90%);
+  margin-left: -60px;
+    margin-right: -60px;
+  /* position: relative; */
+  transform: translate(0, 31px)scale(.85)
+}
+.card h3 {
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 70px;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.top-text  >div{
+  text-align: right;
+}
+.top-text h2{
+  font-size: 32px;
+  color: #fff;
+  /* text-align: right; */
+  font-weight: 400;
+}
+.top-text h2 span{
+  color: #70ad47;
+  font-weight: 700;
+}
+.calculator{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+form input{
+  outline: none;
+  border: none;
+  font-size: 16px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(91, 91, 151);
+  margin: 2px;
+  border-radius: 10px;
+  color: #fff;
+ font-weight: bolder;
+ cursor: pointer;
+}
+form input:hover{
+  background-color: rgb(158, 79, 232);
+}
+.dispaly{
+  margin: 5px 0px 15px 0px;
+  display: flex;
+  justify-content: end;
+}
+.dispaly input{
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 5px 10px;
+  background-color: #000;
+}
+
+.equal{
+  width: 120px;
+}
+
+@media (max-width:580px){
+  .container{
+    display: none;
+  }
+}
